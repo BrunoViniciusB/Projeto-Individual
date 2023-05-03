@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeDBZ</title>
-    <link rel="stylesheet" href="../CSS/siteDBZ.css">
+    <link rel="stylesheet" href="siteDBZ.css">
 </head>
 <body>
 
@@ -16,17 +16,26 @@
         </div>
             <div class="indice">
                 <ul><a href="siteDBZ.html">Home</a></ul>
-                <ul><a href="">Login</a></ul>
+                <ul><a href="login.html">Login</a></ul>
                 <ul><a href="cadastro.html">Cadastro</a></ul>
-                <select class="select" name="" id="select_personagens">
-                    <option class="opcao" value="">Personagens</option>
-                    <option class="opcao" value="">Goku</option>
-                    <option class="opcao" value="">Gohan</option>
-                    <option class="opcao" value="">Vegeta</option>
-                    <option class="opcao" value="">Piccolo</option>
-                </select>
+                
+                <div class="estilizacao_botao">
+                <button id="botao_personagens" onclick="mostrarPersonagens()">
+                    Personagens
+                    <div id="id_personagens" class="div_personagens">
+                        <a href="">Goku</a>
+                        <a href="">Vegeta</a>    
+                        <a href="">Gohan</a>
+                        <a href="">Piccolo</a>
+
+                    </div>
+                </button>
+                <img onclick="mostrarPersonagens()" src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
+                </div>
+
+            </div>
         </div>
-    </div>
+        
     </header>
 
     <div class="imagemDeFundo">
@@ -49,3 +58,10 @@
 
 </body>
 </html>
+
+<script>
+    function mostrarPersonagens() {
+        id_personagens.style.display.flex
+    }
+
+</script>

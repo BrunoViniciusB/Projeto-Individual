@@ -31,7 +31,7 @@ body{
 }
 
 .imagemDeFundo .container{
-    background-color: rgba(255, 255, 255, 0.918);
+    background-color: rgba(255, 255, 255, 0.877);
 }
 
 .logo{
@@ -56,11 +56,22 @@ body{
     font-size: 17px;
 }
 
-.select{
-    border: none;
-    background-color: rgb(255, 136, 0);
-    font-size: 17px;
+.estilizacao_botao {
+    display: flex; 
 }
+
+.estilizacao_botao img {
+    margin-top: 3px; 
+}
+
+#botao_personagens {
+    display: block;
+    position: relative;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    font-size: 15px;
+}
+
 .opcao{
     background-color: white;
 }
@@ -91,4 +102,21 @@ body{
     display: flex;
     width: 65%;
     margin-left: 20px;
+}
+
+.div_personagens{
+    background-color: white;
+    display: none;
+    width: 112px;
+    height: 100px;
+    position: absolute;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+
+.div_personagens a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    justify-content: space-around;
 }

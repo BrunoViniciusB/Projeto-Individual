@@ -7,6 +7,7 @@
     <title>CadastroDBZ</title>
     <link rel="stylesheet" href="siteDBZ.css" />
     <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="" />
   </head>
   <body>
     <header class="nav">
@@ -35,13 +36,11 @@
       <div class="container">
         <div class="conteudo">
           <div class="cadastro">
-            <h3>Cadastro</h3>
-            Usuário: <input id="input_nome" /> E-mail:
-            <input id="input_email" type="email" /> Senha:
-            <input id="input_senha" type="password" /> Confirmar senha:
-            <input id="input_confirmar_senha" type="password" />
+            <h3>Login</h3>
+            E-mail: <input id="input_email" type="email" /> 
+            Senha: <input id="input_senha" type="password" />
 
-            <button onclick="cadastrar()">Cadastrar</button>
+            <button onclick="logar()">Entrar</button>
           </div>
         </div>
       </div>
@@ -50,25 +49,15 @@
 </html>
 
 <script>
-  function cadastrar() {
-    var nome = input_nome.value;
+  function logar() {
     var email = input_email.value;
     var senha = input_senha.value;
-    var confirmar_senha = input_confirmar_senha.value;
 
-    if (email != "" && senha != "" && nome != "" && confirmar_senha != "") {
+    if (email != "" && senha != "") {
       if (email.indexOf("@") >= 0 && email.indexOf(".") >= 0) {
         
       } else {
         alert("email inválido");
-      }
-
-      if (senha == confirmar_senha) {
-
-      } else {
-        alert(
-          "senha e confirmacao de senha estao diferentes por favor tente novamente"
-        );
       }
     } else {
       alert("todos os campos devem estar preenchidos");
