@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CadastroDBZ</title>
     <link rel="stylesheet" href="siteDBZ.css" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="cadastro-login.css" />
   </head>
   <body>
     <header class="nav">
@@ -36,10 +36,10 @@
         <div class="conteudo">
           <div class="cadastro">
             <h3>Cadastro</h3>
-            Usuário: <input id="input_nome" /> E-mail:
-            <input id="input_email" type="email" /> Senha:
-            <input id="input_senha" type="password" /> Confirmar senha:
-            <input id="input_confirmar_senha" type="password" />
+            Usuário: <input id="input_nome" placeholder="nome"/> 
+            E-mail: <input id="input_email" type="email" placeholder="e-mail"/> 
+            Senha: <input id="input_senha" type="password" placeholder="senha"/> 
+            Confirmar senha: <input id="input_confirmar_senha" type="password" placeholder="confirmar"/>
 
             <button onclick="cadastrar()">Cadastrar</button>
           </div>
@@ -58,7 +58,7 @@
 
     if (email != "" && senha != "" && nome != "" && confirmar_senha != "") {
       if (email.indexOf("@") >= 0 && email.indexOf(".") >= 0) {
-        
+
       } else {
         alert("email inválido");
       }

@@ -19,11 +19,11 @@
                 <ul><a href="login.html">Login</a></ul>
                 <ul><a href="cadastro.html">Cadastro</a></ul>
                 
-                <div class="estilizacao_botao">
+                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
                 <button id="botao_personagens" onclick="mostrarPersonagens()">
                     Personagens
                     <div id="id_personagens" class="div_personagens">
-                        <a href="">Goku</a>
+                        <a href="goku.html">Goku</a>
                         <a href="">Vegeta</a>    
                         <a href="">Gohan</a>
                         <a href="">Piccolo</a>
@@ -56,12 +56,25 @@
     </div>
 </div>
 
+    <div class="sobreNos">
+        <div class="container">
+            <div class="conteudoSobreNos">
+                <h1>Sobre Nós</h1>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore exercitationem sunt odio cumque explicabo assumenda sapiente non, deleniti ex impedit aut distinctio ratione totam laboriosam facere culpa ut fugiat corrupti. </p>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
 
 <script>
     function mostrarPersonagens() {
-        id_personagens.style.display.flex
-    }
+        id_personagens.style.display = "flex"
+        
+        if(id_personagens.style.display) {
+            id_personagens.style.display == "none"
+        }
+        }
 
 </script>

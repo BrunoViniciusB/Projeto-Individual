@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CadastroDBZ</title>
     <link rel="stylesheet" href="siteDBZ.css" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="cadastro-login.css" />
     <link rel="stylesheet" href="" />
   </head>
   <body>
@@ -37,8 +37,8 @@
         <div class="conteudo">
           <div class="cadastro">
             <h3>Login</h3>
-            E-mail: <input id="input_email" type="email" /> 
-            Senha: <input id="input_senha" type="password" />
+            E-mail: <input id="input_email" type="email" placeholder="e-mail"/> 
+            Senha: <input id="input_senha" type="password" placeholder="senha"/>
 
             <button onclick="logar()">Entrar</button>
           </div>
@@ -55,7 +55,7 @@
 
     if (email != "" && senha != "") {
       if (email.indexOf("@") >= 0 && email.indexOf(".") >= 0) {
-        
+
       } else {
         alert("email inválido");
       }
