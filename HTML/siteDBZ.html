@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeDBZ</title>
-    <link rel="stylesheet" href="siteDBZ.css">
+    <link rel="stylesheet" href="../CSS/siteDBZ.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
                 <ul><a href="cadastro.html">Cadastro</a></ul>
                 
                 <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens" onclick="mostrarPersonagens()">
+                <button id="botao_personagens">
                     Personagens
                     <div id="id_personagens" class="div_personagens">
                         <a href="goku.html">Goku</a>
@@ -30,7 +30,7 @@
 
                     </div>
                 </button>
-                <img onclick="mostrarPersonagens()" src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
+                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
                 </div>
 
             </div>
@@ -47,7 +47,7 @@
             </h1>
             <div class="conteudoInterno">
                 <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius voluptates impedit magni illum nostrum vero autem facilis itaque reprehenderit! Dignissimos maxime aut molestias dolore totam doloribus vel vitae natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique eaque optio aspernatur quia aperiam, ab, nihil incidunt officiis ut placeat, voluptatum tempora debitis quo? Deleniti praesentium est veritatis impedit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum earum, ipsam deleniti itaque sequi temporibus, consequatur totam unde, amet pariatur sunt tenetur? Dolorum voluptatem accusamus aliquid harum illum excepturi accusantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis placeat officia facere natus aliquam sit, corrupti doloribus recusandae repellat, quo quasi illum consequuntur in molestiae veniam tempora iusto nisi quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius voluptates impedit magni illum Mimtrum vero autem facilis itaque reprehenderit! Dignissimos maxime aut molestias dolore totam doloribus vel vitae natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique eaque optio aspernatur quia aperiam, ab, nihil incidunt officiis ut placeat, voluptatum tempora debitis quo? Deleniti praesentium est veritatis impedit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mimtrum earum, ipsam deleniti itaque sequi temporibus, consequatur totam unde, amet pariatur sunt tenetur? Dolorum voluptatem accusamus aliquid harum illum excepturi accusantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis placeat officia facere natus aliquam sit, corrupti doloribus recusandae repellat, quo quasi illum consequuntur in molestiae veniam tempora iusto nisi quas!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, omnis! A esse ipsum, quisquam labore illo suscipit doloribus tempore molestiae numquam debitis voluptatem repellendus nulla sapiente sit nam tenetur dolor.
                 </p>
                 <div class="imagemDoContainer"></div>
@@ -56,25 +56,41 @@
     </div>
 </div>
 
-    <div class="sobreNos">
+    <div class="sobreMim">
         <div class="container">
-            <div class="conteudoSobreNos">
-                <h1>Sobre Nós</h1>
+            <div class="conteudoSobreMim">
+                <h1>Sobre Mim</h1>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore exercitationem sunt odio cumque explicabo assumenda sapiente non, deleniti ex impedit aut distinctio ratione totam laboriosam facere culpa ut fugiat corrupti. </p>
             </div>
 
         </div>
     </div>
+
+
+    <footer class="contato">
+        <div class="container">
+            <div class="foot">
+                <p>instagram</p>
+                <p>facebook</p>
+                <p>discord</p>
+                <p>twitter</p>
+            </div>
+       
+    </div>
+    </footer>
 </body>
 </html>
 
 <script>
+    var navIsShowing = false;
     function mostrarPersonagens() {
-        id_personagens.style.display = "flex"
-        
-        if(id_personagens.style.display) {
-            id_personagens.style.display == "none"
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
         }
-        }
+    }
 
 </script>

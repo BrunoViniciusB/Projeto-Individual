@@ -123,22 +123,36 @@ body{
 
 }
 
-.sobreNos{
-    background-color: rgb(113, 13, 153);
+.sobreMim{
+    background-color: rgb(119, 39, 151);
     height: 500px;
 }
 
-.sobreNos .container{
+.sobreMim .container{
     background-color: rgba(255, 255, 255, 0.877);
     height: 500px;
 }
 
-.conteudoSobreNos h1{
+.conteudoSobreMim h1{
     display: flex;
     justify-content: center;
 }
 
-.condeudoSobreNos p{
+.condeudoSobreMim p{
     display: flex;
     margin: 5px;
 }
+
+.contato{
+    background-color: black;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 190vh;
+    display: flex;
+    justify-content: space-around;
+}
+
