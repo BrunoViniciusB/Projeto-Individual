@@ -31,14 +31,14 @@ body{
 }
 
 .imagemDeFundo .container{
-    background-color: rgba(255, 255, 255, 0.877);
+    background-color: rgba(14, 14, 14, 0.6);
 }
 
 .logo{
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 255, 0.767);
-    padding: 0px 10px 0px 10px;
+    padding: none;
     cursor: pointer;
 }
 
@@ -82,6 +82,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 80px;
+    color: white;
 }
 
 .conteudoInterno{
@@ -102,6 +103,7 @@ body{
     display: flex;
     width: 65%;
     margin-left: 20px;
+    color: white;
 }
 
 .div_personagens{
@@ -129,18 +131,20 @@ body{
 }
 
 .sobreMim .container{
-    background-color: rgba(255, 255, 255, 0.877);
+    background-color: rgba(14, 14, 14, 0.6);
     height: 500px;
 }
 
 .conteudoSobreMim h1{
     display: flex;
     justify-content: center;
+    color: white;
 }
 
-.condeudoSobreMim p{
+.conteudoSobreMim p{
     display: flex;
-    margin: 5px;
+    margin: 20px;
+    color: white;
 }
 
 .contato{

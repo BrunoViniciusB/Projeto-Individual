@@ -29,15 +29,21 @@
 
                     </div>
                 </button>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
 
 <script>
+    var navIsShowing = false;
     function mostrarPersonagens() {
-        id_personagens.style.display = "flex"
-        
-        if(id_personagens.style.display) {
-            id_personagens.style.display == "none"
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
         }
-        }
+    }
 </script>
