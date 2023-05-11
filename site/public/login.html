@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LoginDBZ</title>
+
+    <link rel="stylesheet" href="css/HomeDBZ.css">
+    <link rel="stylesheet" href="css/cadastro-login.css">
+    <script src="./js/funcoes.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="container">
+          <div class="logo">
+            
+              <img
+                src="https://logosmarcas.net/wp-content/uploads/2021/02/Dragon-Ball-Logo.png"
+                height="85px"
+            />
+          </div>
+          <div class="indice">
+            <ul>
+              <a href="HomeDBZ.html">Home</a>
+            </ul>
+            <!-- session storage -->
+            <ul>
+              <a href="login.html">Login</a>
+            </ul>
+            <ul>
+              <a href="cadastro.html">Cadastro</a>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="imagemDeFundo">
+        <div class="container">
+          <div class="conteudo">
+            <div class="cadastro">
+              <h3>Login</h3>
+              E-mail: <input id="input_email" type="email" placeholder="e-mail"/> 
+              Senha: <input id="input_senha" type="password" placeholder="senha"/>
+  
+              <button onclick="logar()">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="login">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
+                <div id="div_aguardar" class="loading-div">
+                </div>
+
+                <div id="div_erros_login"></div>
+         
+    </div>
+
+    <footer class="contato">
+        <div class="container">
+            <div class="foot">
+                <p>Feito por Bruno Vinicius</p>
+            </div>
+       
+    </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    function logar() {
+        aguardar();
+
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            alert('Preencha todas os campos para prosseguir')
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>

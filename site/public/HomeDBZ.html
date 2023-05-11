@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeDBZ</title>
+    <link rel="stylesheet" href="css/HomeDBZ.css">
+</head>
+<body>
+
+    <header class="nav">
+        <div class="container">
+        <div class="logo">
+            <img src="https://logosmarcas.net/wp-content/uploads/2021/02/Dragon-Ball-Logo.png" height="85px">
+        </div>
+            <div class="indice">
+                <ul><a href="HomeDBZ.html">Home</a></ul>
+                <ul><a href="login.html">Login</a></ul>
+                <ul><a href="cadastro.html">Cadastro</a></ul>
+                
+                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
+                <button id="botao_personagens">
+                    Personagens
+                    <div id="id_personagens" class="div_personagens">
+                        <a href="goku.html">Goku</a>
+                        <a href="">Vegeta</a>    
+                        <a href="">Gohan</a>
+                        <a href="">Piccolo</a>
+
+                    </div>
+                </button>
+                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
+                </div>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="imagemDeFundo">
+    
+        <div class="container">
+            <div class="conteudo">
+            <h1 class="titulo">
+                História
+            </h1>
+            <div class="conteudoInterno">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius voluptates impedit magni illum Mimtrum vero autem facilis itaque reprehenderit! Dignissimos maxime aut molestias dolore totam doloribus vel vitae natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique eaque optio aspernatur quia aperiam, ab, nihil incidunt officiis ut placeat, voluptatum tempora debitis quo? Deleniti praesentium est veritatis impedit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mimtrum earum, ipsam deleniti itaque sequi temporibus, consequatur totam unde, amet pariatur sunt tenetur? Dolorum voluptatem accusamus aliquid harum illum excepturi accusantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis placeat officia facere natus aliquam sit, corrupti doloribus recusandae repellat, quo quasi illum consequuntur in molestiae veniam tempora iusto nisi quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, omnis! A esse ipsum, quisquam labore illo suscipit doloribus tempore molestiae numquam debitis voluptatem repellendus nulla sapiente sit nam tenetur dolor.
+                </p>
+                <div class="imagemDoContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="sobreMim">
+        <div class="container">
+            <div class="conteudoSobreMim">
+                <h1>Sobre Mim</h1>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore exercitationem sunt odio cumque explicabo assumenda sapiente non, deleniti ex impedit aut distinctio ratione totam laboriosam facere culpa ut fugiat corrupti. </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="contato">
+        <div class="container">
+            <div class="foot">
+                <p>Feito por Bruno Vinicius</p>
+            </div>
+       
+    </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    var navIsShowing = false;
+    function mostrarPersonagens() {
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
+        }
+    }
+
+</script>
