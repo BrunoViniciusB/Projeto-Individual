@@ -1,5 +1,5 @@
 .imagemDeFundo{
-    background-image: url('https://i.pinimg.com/originals/78/55/9b/78559b16f10875bb831b9052aa51bed3.jpg');
+    background-image: url('../assets/imgs/background-céu-azul-dbz-tamanho-certo.png');
     background-size: cover;
 }
 
@@ -17,13 +17,19 @@
     width: 200px;
     background-color: rgb(48, 129, 206);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: white;
 }
 .cadastro h3 {
     align-self: center;
     font-weight: bold;
     margin: 5px 0px 10px 0px;
+    font-size: 23px;
+}
+
+.cadastro span{
+    margin-bottom: 4px;
+    font-size: 18px;
 }
 
 .cadastro button{
@@ -47,5 +53,18 @@
     border-color: rgb(25, 25, 204);
     box-shadow: none;
     margin-bottom: 20px;
-    padding: 2.5px 2.5px 2.5px 2.5px;
+    padding: 3.5px 3.5px 3.5px 3.5px;
+}
+
+.cadastro button{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.botao_logar_cadastrar{
+    display: flex;
+    justify-content: center;
 }
