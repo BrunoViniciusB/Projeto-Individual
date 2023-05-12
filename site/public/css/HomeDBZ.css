@@ -137,21 +137,29 @@ body{
     height: 500px;
 }
 
+.sobreMim .container {
+    margin: 0px;
+    width: auto;
+}
+
 .sobreMim .container{
     background-color: rgba(14, 14, 14, 0.6);
     height: 500px;
 }
 
+
 .conteudoSobreMim h1{
     display: flex;
     justify-content: center;
     color: white;
+    font-size: 45px;
 }
 
 .conteudoSobreMim p{
     display: flex;
     margin: 20px;
     color: white;
+    font-size: 20px;
 }
 
 .contato{

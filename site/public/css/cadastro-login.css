@@ -14,9 +14,9 @@
 .cadastro{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     background-color: rgb(48, 129, 206);
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 15px;
     color: white;
 }
@@ -53,7 +53,7 @@
     border-color: rgb(25, 25, 204);
     box-shadow: none;
     margin-bottom: 20px;
-    padding: 3.5px 3.5px 3.5px 3.5px;
+    padding: 7px 10px;
 }
 
 .cadastro button{
