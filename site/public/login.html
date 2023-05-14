@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="css/HomeDBZ.css">
     <link rel="stylesheet" href="css/cadastro-login.css">
     <script src="./js/funcoes.js"></script>
-
+    <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,13 +28,13 @@
           <div class="logo">
             
               <img
-                src="https://logosmarcas.net/wp-content/uploads/2021/02/Dragon-Ball-Logo.png"
+                src="assets/imgs/Dragon-Ball-Logo.png"
                 height="85px"
             />
           </div>
           <div class="indice">
             <ul>
-              <a href="HomeDBZ.html">Home</a>
+              <a href="index.html">Home</a>
             </ul>
             <!-- session storage -->
             <ul>
@@ -37,6 +43,19 @@
             <ul>
               <a href="cadastro.html">Cadastro</a>
             </ul>
+            <div onclick="mostrarPersonagens()" class="estilizacao_botao">
+              <button id="botao_personagens">
+                  Personagens
+                  <div id="id_personagens" class="div_personagens">
+                      <a href="goku.html">Goku</a>
+                      <a href="">Vegeta</a>    
+                      <a href="">Gohan</a>
+                      <a href="">Piccolo</a>
+  
+                  </div>
+              </button>
+              <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
+              </div>
           </div>
         </div>
       </header>
@@ -57,26 +76,29 @@
       </div>
 
 
-    <div class="login">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
+      <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+            <div class="mensagem_erro" id="mensagem_erro"></div>
         </div>
+    </div>
+            
+    
                 <div id="div_aguardar" class="loading-div">
                 </div>
 
                 <div id="div_erros_login"></div>
          
-    </div>
+    
 
     <footer class="contato">
         <div class="container">
             <div class="foot">
-                <p>Feito por Bruno Vinicius</p>
+                <h4>Feito por Bruno Vinicius - SPTech &copy; 2023<span class="version">v1.0.0</span></h4>
             </div>
        
     </div>
+    
+
     </footer>
 
 
@@ -94,7 +116,7 @@
         var senhaVar = input_senha.value;
 
         if (emailVar == "" || senhaVar == "") {
-            alert('Preencha todas os campos para prosseguir')
+            mensagem_erro.innerHTML = `Preencha todos os campos para prosseguir!`
             finalizarAguardar();
             return false;
         }
@@ -153,6 +175,17 @@
 
     function sumirMensagem() {
         cardErro.style.display = "none"
+    }
+
+    var navIsShowing = false;
+    function mostrarPersonagens() {
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
+        }
     }
 
 </script>

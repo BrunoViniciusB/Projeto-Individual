@@ -4,7 +4,7 @@
 }
 
 .indice{
-    width: 350px;
+    width: 500px;
 }
 
 .imagemDeFundo .container{
@@ -45,14 +45,14 @@
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    /* height: 600px; */
+    flex-direction: column;
 }
 
 .cadastro input{
     border-radius: 6px;
     border-color: rgb(25, 25, 204);
     box-shadow: none;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     padding: 7px 10px;
 }
 
@@ -62,9 +62,31 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    font-weight: bold;
 }
 
 .botao_logar_cadastrar{
     display: flex;
     justify-content: center;
+}
+
+.mensagem_erro{
+    background-color: #ff4545;
+    color: white;
+    width: 350px;
+    display: flex;
+    text-align: center;
+}
+
+.alerta_erro{
+    display: flex;
+    justify-content: center;
+    background-color:  #ff4545;
+}
+
+#div_erros_login{
+    display: flex;
+    background-color: #ff4545;
+    color: white;
+    text-align: center;
 }

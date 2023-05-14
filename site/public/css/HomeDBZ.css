@@ -1,3 +1,8 @@
+*
+{ 
+    font-family: "Poppins";
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -11,7 +16,6 @@ body{
 .nav{
     background-color: rgb(255, 153, 37);
     border-bottom: 5px solid black;
-    border-color: black
 }
 
 .indice ul{
@@ -45,12 +49,11 @@ body{
 
 .indice{
     display: flex;
-    width: 400px;
+    width: 500px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
+
 }
 
 .indice ul a{
@@ -71,8 +74,8 @@ body{
     display: block;
     background-color: rgb(255, 153, 37);
     border: none;
-    font-size: 17px;
-    margin-top: 4px;
+    font-size: 20px;
+    padding-left: 0;
 }
 
 .opcao{
@@ -87,6 +90,7 @@ body{
     height: 80px;
     color: white;
     font-size: 45px;
+
 }
 
 .conteudoInterno{
@@ -116,12 +120,13 @@ body{
 .div_personagens{
     background-color: white;
     display: none;
-    width: 112px;
+    width: 145px;
     height: 100px;
     position: absolute;
     overflow-y: hidden;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .div_personagens a{
@@ -129,7 +134,8 @@ body{
     text-decoration: none;
     justify-content: center;
     color: black;
-
+    font-size: 17px;
+    border-bottom: 1px solid black;
 }
 
 .sobreMim{
@@ -165,6 +171,8 @@ body{
 .contato{
     background-color: black;
 }
+
+
 
 .foot{
     display: flex;
