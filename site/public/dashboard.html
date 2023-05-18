@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="css/HomeDBZ.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
 
 </head>
 <body>
@@ -40,10 +46,26 @@
         
     </header>
 
+    <!-- BODY -->
+    <div class="conteudo">
+        <div class="inputs">
+            <input id="input_nome" placeholder="nome">
+            <input id="input_poder_base" placeholder="ki">
+            <input id="input_transformacao" placeholder="transformacao">
+        </div>
 
-    <div class="condeudo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias placeat expedita autem reprehenderit, exercitationem quaerat deserunt unde eveniet fugiat vero! Obcaecati placeat, eum amet at quia distinctio non. Labore?
+        <div class="botao">
+    <button onclick="transformar()">
+        Ver poder transformado
+    </button>
+        </div>
+    
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+      </div>
+
     </div>
+    <!-- BODY -->
 
 
 
@@ -56,6 +78,8 @@
     </div>
     </footer>
 </body>
+
+
 </html>
 
 <script>
@@ -69,4 +93,62 @@
             id_personagens.style.display = "flex"
         }
     }
-</script>
+
+    
+    function transformar() {
+
+        
+
+        var nome = input_nome.value
+        var kiBase = Number(input_poder_base.value)
+        var transformacao = input_transformacao.value
+// VERIFICAR TRANSFORMAÇÃO
+        var SSJ = kiBase * 50
+        var SSJ2 = SSJ * 2
+        var SSJ3 = SSJ2 * 4
+
+    const ctx = document.getElementById('myChart');
+
+
+    var jsonGrafico = {
+      type: 'bar',
+      data: {
+        labels: [nome],
+        datasets: [{
+          label: 'Nível de poder',
+          data: [kiBase, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        },
+        {
+          label: `Nível de poder ${transformacao}` ,
+          data: [],
+          borderWidth: 1
+        },
+        {
+          label: `Nível de poder ${transformacao}` ,
+          data: [],
+          borderWidth: 1
+        }]
+      },
+      options: {    
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    }
+    if(transformacao == "ssj") {
+        jsonGrafico.data.datasets[1].data.push(SSJ)
+    }
+    if(transformacao == "ssj2") {
+        jsonGrafico.data.datasets[2].data.push(SSJ2)
+    }
+    if(transformacao == "ssj3") {
+        jsonGrafico.data.datasets[3].data.push(SSJ3)
+    }
+
+    new Chart(ctx, jsonGrafico);
+    
+    }
+  </script>
