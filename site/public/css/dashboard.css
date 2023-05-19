@@ -21,6 +21,17 @@ body{
     gap: 20px;
 }
 
+input{
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h4{
+    margin: 0;
+}
+
 .botao{
     display: flex;
     justify-content: center;

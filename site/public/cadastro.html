@@ -8,7 +8,7 @@
 
     <title>CadastroDBZ</title>
     <link rel="stylesheet" href="css/HomeDBZ.css" />
-    <link rel="stylesheet" href="css/cadastro-login.css" />
+    <link rel="stylesheet" href="css/cadastro.css" />
     <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -61,12 +61,7 @@
 
 
       <!-- Corpo do site -->
-      <div class="login">
-      <div class="alerta_erro">
-        <div class="card_erro" id="cardErro">
-            <div class="mensagem_erro" id="mensagem_erro"></div>
-        </div>
-    </div>
+      
       <div class="imagemDeFundo">
         <div class="container">
           <div class="conteudo">
@@ -76,21 +71,29 @@
               <span>E-mail:</span><input id="input_email" type="email" placeholder="e-mail"/> 
               <span>Senha:</span> <input id="input_senha" type="password" placeholder="senha"/> 
               <span>Confirmar senha:</span> <input id="input_confirmar_senha" type="password" placeholder="confirmar"/>
+              <span>Personagem favorito:</span> <input id="input_favorito" placeholder="ex: goku, vegeta, gohan"/> 
+
   
                 <div class="botao_logar_cadastrar">
                     <button onclick="cadastrar()">Cadastrar</button>
                 </div>
 
             </div>
-            <div id="div_aguardar" class="loading-div">
-
-            </div>
-    
-            <div id="div_erros_login"></div>
+            
         </div>
     </div>
 </div>
-    
+
+    <div class="login">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <div class="mensagem_erro" id="mensagem_erro"></div>
+        </div>
+    </div>
+    <div id="div_aguardar" class="loading-div">
+
+        <div id="div_erros_login"></div>
+    </div>
     
         
     </div>     

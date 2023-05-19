@@ -1,0 +1,101 @@
+.imagemDeFundo{
+    background-image: url('../assets/imgs/background-céu-azul-dbz-tela-cadastro.png');
+    background-size: cover;
+}
+
+.indice{
+    width: 500px;
+}
+
+.imagemDeFundo .container{
+    height: 580px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgb(48, 129, 206);
+    padding: 20px 70px;
+    border-radius: 15px;
+    color: white;
+}
+.cadastro h3 {
+    align-self: center;
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+    font-size: 23px;
+}
+
+.cadastro span{
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.cadastro button{
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro input{
+    border-radius: 6px;
+    border-color: rgb(25, 25, 204);
+    box-shadow: none;
+    margin-bottom: 13px;
+    padding: 7px 10px;
+}
+
+.cadastro button{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+    border: 1px solid black;
+}
+
+.botao_logar_cadastrar{
+    display: flex;
+    justify-content: center;
+}
+
+.mensagem_erro{
+    background-color: #ff4545;
+    color: white;
+    width: 350px;
+    display: flex;
+    text-align: center;
+}
+
+.alerta_erro{
+    display: flex;
+    justify-content: center;
+    background-color:  #ff4545;
+}
+
+#div_erros_login{
+    display: flex;
+    background-color: #ff4545;
+    color: white;
+    text-align: center;
+}

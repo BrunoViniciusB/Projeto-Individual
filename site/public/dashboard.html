@@ -49,9 +49,9 @@
     <!-- BODY -->
     <div class="conteudo">
         <div class="inputs">
-            <input id="input_nome" placeholder="nome">
-            <input id="input_poder_base" placeholder="ki">
-            <input id="input_transformacao" placeholder="transformacao">
+            <h4>Digíte um nome:</h4> <input id="input_nome" placeholder="ex: Goku">
+            <h4>Digíte o nível de KI:</h4> <input id="input_poder_base" placeholder="ex: 8000">
+            <h4>Escolha uma transformação:</h4> <input id="input_transformacao" placeholder="ex: ssj">
         </div>
 
         <div class="botao">
@@ -94,10 +94,8 @@
         }
     }
 
-    
-    function transformar() {
 
-        
+    function transformar() {
 
         var nome = input_nome.value
         var kiBase = Number(input_poder_base.value)
@@ -115,17 +113,22 @@
       data: {
         labels: [nome],
         datasets: [{
-          label: 'Nível de poder',
-          data: [kiBase, 19, 3, 5, 2, 3],
+          label: 'Poder Base',
+          data: [kiBase],
           borderWidth: 1
         },
         {
-          label: `Nível de poder ${transformacao}` ,
+          label: `Poder como Super Saiyajin` ,
           data: [],
           borderWidth: 1
         },
         {
-          label: `Nível de poder ${transformacao}` ,
+          label: `Poder como Super Saiyajin 2` ,
+          data: [],
+          borderWidth: 1
+        },
+        {
+          label: `Poder como Super Saiyajin 3` ,
           data: [],
           borderWidth: 1
         }]
