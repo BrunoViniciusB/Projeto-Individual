@@ -48,19 +48,29 @@
 
     <!-- BODY -->
     <div class="conteudo">
+        <div class="titulo">
+            <h4>Veja a diferença de poder entre as transformações</h4>
+        </div>
         <div class="inputs">
             <h4>Digíte um nome:</h4> <input id="input_nome" placeholder="ex: Goku">
             <h4>Digíte o nível de KI:</h4> <input id="input_poder_base" placeholder="ex: 8000">
-            <h4>Escolha uma transformação:</h4> <input id="input_transformacao" placeholder="ex: ssj">
+            <h4>Escolha uma transformação:</h4> 
+            <select name="" id="transformacoes">
+                <option value="">SELECIONE</option>
+                <option value="SSJ">Super Saiyajin</option>
+                <option value="SSJ2">Super Saiyajin 2</option>
+                <option value="SSJ3">Super Saiyajin 3</option>
+                
+            </select>
         </div>
 
-        <div class="botao">
-    <button onclick="transformar()">
+        <div id="botao">
+    <button onclick="transformar()" class="botao">
         Ver poder transformado
     </button>
         </div>
     
-    <div class="grafico">
+    <div class="grafico" id="divGrafico">
         <canvas id="myChart"></canvas>
       </div>
 
@@ -96,16 +106,23 @@
 
 
     function transformar() {
+        var ctx = document.getElementById('myChart');
+        if(ctx != null){
+            ctx.remove();
+        }
+        divGrafico.innerHTML = "<canvas id='myChart'></canvas>"
+        const ctxNovo = document.getElementById('myChart');
+        
+        
 
         var nome = input_nome.value
         var kiBase = Number(input_poder_base.value)
-        var transformacao = input_transformacao.value
+        var transformacao = transformacoes.value
 // VERIFICAR TRANSFORMAÇÃO
         var SSJ = kiBase * 50
         var SSJ2 = SSJ * 2
         var SSJ3 = SSJ2 * 4
 
-    const ctx = document.getElementById('myChart');
 
 
     var jsonGrafico = {
@@ -141,17 +158,17 @@
         }
       }
     }
-    if(transformacao == "ssj") {
+    if(transformacao == "SSJ") {
         jsonGrafico.data.datasets[1].data.push(SSJ)
     }
-    if(transformacao == "ssj2") {
+    if(transformacao == "SSJ2") {
         jsonGrafico.data.datasets[2].data.push(SSJ2)
     }
-    if(transformacao == "ssj3") {
+    if(transformacao == "SSJ3") {
         jsonGrafico.data.datasets[3].data.push(SSJ3)
     }
 
-    new Chart(ctx, jsonGrafico);
+    new Chart(ctxNovo, jsonGrafico);
     
     }
   </script>

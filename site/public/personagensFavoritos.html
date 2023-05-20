@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goku</title>
-    <link rel="stylesheet" href="../CSS/siteDBZ.css">
+    <title>HomeDBZ</title>
+    <link rel="stylesheet" href="css/HomeDBZ.css">
+    <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="nav">
         <div class="container">
         <div class="logo">
-            <a href="siteDBZ.html"><img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/36bdc5ea4443cd8e42f22ec7d3884cbb.jpe" height="85px"></a>
+            <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
         </div>
             <div class="indice">
-                <ul><a href="siteDBZ.html">Home</a></ul>
+                <ul><a href="index.html">Home</a></ul>
                 <ul><a href="login.html">Login</a></ul>
                 <ul><a href="cadastro.html">Cadastro</a></ul>
                 
                 <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens" onclick="mostrarPersonagens()">
+                <button id="botao_personagens">
                     Personagens
                     <div id="id_personagens" class="div_personagens">
                         <a href="goku.html">Goku</a>
@@ -29,9 +37,27 @@
 
                     </div>
                 </button>
+                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
                 </div>
+
             </div>
         </div>
+        
+    </header>
+
+    <!-- body -->
+    
+    <!-- body -->
+
+
+    <footer class="contato">
+        <div class="container">
+            <div class="foot">
+                <h4>Feito por Bruno Vinicius - SPTech &copy; 2023<span class="version">v1.0.0</span></h4>
+            </div>
+       
+    </div>
+    </footer>
 </body>
 </html>
 
@@ -46,4 +72,5 @@
             id_personagens.style.display = "flex"
         }
     }
+
 </script>

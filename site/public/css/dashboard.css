@@ -28,11 +28,31 @@ input{
     padding: 5px;
 }
 
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    border: 1px solid black;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 h4{
     margin: 0;
 }
 
-.botao{
+.titulo{
     display: flex;
     justify-content: center;
+    color: black;
+}
+
+select{
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 5px;
 }

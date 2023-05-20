@@ -50,10 +50,24 @@
 
 .cadastro input{
     border-radius: 6px;
+    border: 1.5px solid;
     border-color: rgb(25, 25, 204);
     box-shadow: none;
     margin-bottom: 13px;
     padding: 7px 10px;
+}
+
+.cadastro select{
+    border-radius: 6px;
+    border: 1.5px solid;
+    border-color: rgb(25, 25, 204);
+    box-shadow: none;
+    margin-bottom: 13px;
+    padding: 7px 10px;
+}
+
+select:focus{
+    outline: none;
 }
 
 .cadastro button{

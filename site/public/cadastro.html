@@ -71,7 +71,14 @@
               <span>E-mail:</span><input id="input_email" type="email" placeholder="e-mail"/> 
               <span>Senha:</span> <input id="input_senha" type="password" placeholder="senha"/> 
               <span>Confirmar senha:</span> <input id="input_confirmar_senha" type="password" placeholder="confirmar"/>
-              <span>Personagem favorito:</span> <input id="input_favorito" placeholder="ex: goku, vegeta, gohan"/> 
+              <span>Personagem favorito:</span> 
+              <select name="" id="PersonagensFavoritos">
+                <option value="">Selecione</option>
+                <option value="1">Goku</option>
+                <option value="2">Vegeta</option>
+                <option value="3">Gohan</option>
+                <option value="4">Piccolo</option>
+              </select>
 
   
                 <div class="botao_logar_cadastrar">
@@ -126,6 +133,7 @@
         var emailVar = input_email.value;
         var senhaVar = input_senha.value;
         var confirmacaoSenhaVar = input_confirmar_senha.value;
+        var fkpersonagemFavorito = Number(PersonagensFavoritos.value)
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
@@ -159,7 +167,8 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                fkpersonagemServer: fkpersonagemFavorito
             })
         }).then(function (resposta) {
 

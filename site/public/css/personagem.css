@@ -1,5 +1,6 @@
-* {
-    font-family: Arial;
+*
+{ 
+    font-family: "Poppins";
 }
 
 body{
@@ -15,7 +16,6 @@ body{
 .nav{
     background-color: rgb(255, 153, 37);
     border-bottom: 5px solid black;
-    border-color: black
 }
 
 .indice ul{
@@ -30,30 +30,29 @@ body{
     justify-content: space-between;
 }
 
-.imagemDeFundo .container{
-    background-color: rgba(14, 14, 14, 0.6);
-}
-
 .logo{
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 255, 0.767);
     padding: none;
     cursor: pointer;
 }
 
+.logo img{
+    height: 100px;
+}
+
 .indice{
     display: flex;
-    width: 400px;
+    width: 500px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .indice ul a{
     color: black;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .estilizacao_botao {
@@ -61,19 +60,19 @@ body{
 }
 
 .estilizacao_botao img {
-    margin-top: 3px; 
+    margin-top: 10px; 
 }
 
 #botao_personagens {
     display: block;
     background-color: rgb(255, 153, 37);
     border: none;
-    font-size: 15px;
-
+    font-size: 20px;
+    padding-left: 0;
 }
 
-.opcao{
-    background-color: white;
+.conteudo{
+    margin: auto;
 }
 
 
@@ -82,39 +81,19 @@ body{
     justify-content: center;
     align-items: center;
     height: 80px;
-    color: white;
-}
-
-.conteudoInterno{
-    display: flex;
-    height: 600px;
-}
-
-.imagemDoContainer{
-    display: flex;
-    width: 350px;
-    height: 350px;
-    background-image: url('https://i.pinimg.com/originals/14/c7/3c/14c73c8ca8ccaf782ea2ee4aee83cbff.png');
-    background-size: cover;
-    flex-direction: column;
-}
-
-.conteudo p{
-    display: flex;
-    width: 65%;
-    margin-left: 20px;
-    color: white;
+    font-size: 35px;
 }
 
 .div_personagens{
     background-color: white;
     display: none;
-    width: 112px;
+    width: 145px;
     height: 100px;
     position: absolute;
     overflow-y: hidden;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .div_personagens a{
@@ -122,30 +101,10 @@ body{
     text-decoration: none;
     justify-content: center;
     color: black;
-
+    font-size: 17px;
+    border-bottom: 1px solid black;
 }
 
-.sobreMim{
-    background-color: rgb(119, 39, 151);
-    height: 500px;
-}
-
-.sobreMim .container{
-    background-color: rgba(14, 14, 14, 0.6);
-    height: 500px;
-}
-
-.conteudoSobreMim h1{
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.conteudoSobreMim p{
-    display: flex;
-    margin: 20px;
-    color: white;
-}
 
 .contato{
     background-color: black;

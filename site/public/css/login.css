@@ -49,6 +49,8 @@
 }
 
 .cadastro input{
+    border: 0;
+    border: 1.8px solid;
     border-radius: 6px;
     border-color: rgb(25, 25, 204);
     box-shadow: none;
