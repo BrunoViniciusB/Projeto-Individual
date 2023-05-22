@@ -71,18 +71,6 @@ body{
     padding-left: 0;
 }
 
-.conteudo{
-    margin: auto;
-}
-
-
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    font-size: 35px;
-}
 
 .div_personagens{
     background-color: white;
@@ -93,6 +81,10 @@ body{
     overflow-y: hidden;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 3px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 
 }
 
@@ -104,6 +96,27 @@ body{
     font-size: 17px;
     border-bottom: 1px solid black;
 }
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 60px;
+    margin-top: 0.40em;
+    margin-bottom: 0.40em;
+}
+
+.conteudo{
+    margin: auto;
+    width: 90%;
+}
+
+p{
+    font-size: 20px;
+}
+
 
 
 .contato{

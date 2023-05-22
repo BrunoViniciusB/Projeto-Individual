@@ -126,6 +126,10 @@ body{
     overflow-y: hidden;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 3px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 
 }
 
@@ -140,7 +144,6 @@ body{
 
 .sobreMim{
     background-color: rgb(119, 39, 151);
-    height: 500px;
 }
 
 .sobreMim .container {
@@ -150,9 +153,7 @@ body{
 
 .sobreMim .container{
     background-color: rgba(14, 14, 14, 0.6);
-    height: 500px;
 }
-
 
 .conteudoSobreMim h1{
     display: flex;
@@ -168,11 +169,14 @@ body{
     font-size: 20px;
 }
 
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
 .contato{
     background-color: black;
 }
-
-
 
 .foot{
     display: flex;
