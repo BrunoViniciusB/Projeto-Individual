@@ -15,35 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-</head>
-<body>
-    <!-- HEADER -->
-    <header class="nav">
-        <div class="container">
-        <div class="logo">
-            <img src="../assets/imgs/Dragon-Ball-Logo.png" height="85px">
-        </div>
-            <div class="indice">
-                <ul><a href="../index.html">Home</a></ul>
-                <ul><a href="../login.html">Login</a></ul>
-                <ul><a href="../cadastro.html">Cadastro</a></ul>
-                
-                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens">
-                    Personagens
-                    <div id="id_personagens" class="div_personagens">
-                        <a href="goku.html">Goku</a>
-                        <a href="vegeta.html">Vegeta</a>    
-                        <a href="gohan.html">Gohan</a>
-                        <a href="piccolo.html">Piccolo</a>
+    <script src="../header.js"></script>
 
-                    </div>
-                </button>
-                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
-                </div>
-            </div>
-        </div>
-        </header>
+</head>
+
+<body onload="carregarHeader()">
+
+    <div class="nav" id="header">
+        
+    </div>
         <!-- HEADER -->
 
         <!-- BODY -->

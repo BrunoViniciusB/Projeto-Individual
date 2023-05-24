@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CadastroDBZ</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="css/HomeDBZ.css" />
     <link rel="stylesheet" href="css/cadastro.css" />
     <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
@@ -17,46 +17,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="./js/funcoes.js"></script>
+    <script src="header.js"></script>
 
 </head>
 
-<body>
+<body onload="carregarHeader()">
 
-    <!-- Header do site -->
-    <header class="nav">
-        <div class="container">
-          <div class="logo">
-              <img
-                src="assets/imgs/Dragon-Ball-Logo.png"
-                height="85px"
-            />
-          </div>
-          <div class="indice">
-            <ul>
-              <a href="index.html">Home</a>
-            </ul>
-            <ul>
-              <a href="login.html">Login</a>
-            </ul>
-            <ul>
-              <a href="cadastro.html">Cadastro</a>
-            </ul>
-            <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens">
-                    Personagens
-                    <div id="id_personagens" class="div_personagens">
-                        <a href="telaDosPersonagens/goku.html">Goku</a>
-                        <a href="telaDosPersonagens/vegeta.html">Vegeta</a>    
-                        <a href="telaDosPersonagens/gohan.html">Gohan</a>
-                        <a href="telaDosPersonagens/piccolo.html">Piccolo</a>
-
-                    </div>
-                </button>
-                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
-                </div>
-          </div>
-        </div>
-      </header>
+    <div class="nav" id="header">
+        
+    </div>
       <!-- Fim da header do site -->
 
 
@@ -78,6 +47,11 @@
                 <option value="2">Vegeta</option>
                 <option value="3">Gohan</option>
                 <option value="4">Piccolo</option>
+                <option value="5">Kuririn</option>
+                <option value="6">Trunks</option>
+                <option value="7">Freeza</option>
+                <option value="8">Cell</option>
+                <option value="9">Majin boo</option>
               </select>
 
   

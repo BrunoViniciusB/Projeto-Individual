@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeDBZ</title>
+    <title>Index</title>
     <link rel="stylesheet" href="css/HomeDBZ.css">
     <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
     <style>
@@ -13,37 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="header.js"></script>
 </head>
-<body>
+<body onload="carregarHeader()">
 
-    <header class="nav">
-        <div class="container">
-        <div class="logo">
-            <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
-        </div>
-            <div class="indice">
-                <ul><a href="HomeDBZ.html">Home</a></ul>
-                <ul><a href="login.html">Login</a></ul>
-                <ul><a href="cadastro.html">Cadastro</a></ul>
-                
-                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens">
-                    Personagens
-                    <div id="id_personagens" class="div_personagens">
-                        <a href="telaDosPersonagens/goku.html">Goku</a>
-                        <a href="telaDosPersonagens/vegeta.html">Vegeta</a>    
-                        <a href="telaDosPersonagens/gohan.html">Gohan</a>
-                        <a href="telaDosPersonagens/piccolo.html">Piccolo</a>
-
-                    </div>
-                </button>
-                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
-                </div>
-
-            </div>
-        </div>
+    <div class="nav" id="header">
         
-    </header>
+    </div>
 
     <div class="imagemDeFundo">
     

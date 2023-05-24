@@ -13,17 +13,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body onload="atualizarRanking()">
 
-    <header class="nav">
+    <script src="header.js"></script>
+</head>
+<body onload="atualizarRanking(), carregarHeader()">
+
+    <div class="nav" id="header">
         <div class="container">
         <div class="logo">
             <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
         </div>
             <div class="indice">
                 <ul><a href="index.html">Home</a></ul>
-                <ul><a href="personagensFavoritos.html">Ranking</a></ul>
+                <ul><a href="Ranking.html">Ranking</a></ul>
                 <ul><a href="dashboard.html">Transformações</a></ul>
                 
                 <div onclick="mostrarPersonagens()" class="estilizacao_botao">
@@ -43,13 +45,13 @@
             </div>
         </div>
         
-    </header>
+    </div>
 
     <!-- body -->
     <div id="conteudo" class="conteudo">
-        <h1>Ranking personagens favoritos</h1>
+        <h1>Ranking de personagens favoritos</h1>
         <table id="ranking">
-            <tr>
+            <tr class="cabecalho">
                 <th>Colocação</th>
                 <th>Personagens</th>
                 <th>Quantidade de votos</th>
@@ -102,16 +104,26 @@
 
                         // criando e manipulando elementos do HTML via JavaScript
 
-                        var tdPosicao = i+1
                         var tdPersonagem1 = resposta[0].nome
                         var tdPersonagem2 = resposta[1].nome
                         var tdPersonagem3 = resposta[2].nome
                         var tdPersonagem4 = resposta[3].nome
+                        var tdPersonagem5 = resposta[4].nome
+                        var tdPersonagem6 = resposta[5].nome
+                        var tdPersonagem7 = resposta[6].nome
+                        var tdPersonagem8 = resposta[7].nome
+                        var tdPersonagem9 = resposta[8].nome
+                        
 
                         var qtdPersonagens1 = resposta[0].qtdPersonagens
                         var qtdPersonagens2 = resposta[1].qtdPersonagens
                         var qtdPersonagens3 = resposta[2].qtdPersonagens
                         var qtdPersonagens4 = resposta[3].qtdPersonagens
+                        var qtdPersonagens5 = resposta[4].qtdPersonagens
+                        var qtdPersonagens6 = resposta[5].qtdPersonagens
+                        var qtdPersonagens7 = resposta[6].qtdPersonagens
+                        var qtdPersonagens8 = resposta[7].qtdPersonagens
+                        var qtdPersonagens9 = resposta[8].qtdPersonagens
 
                         ranking.innerHTML += `
                         <tr>
@@ -142,6 +154,46 @@
                             <td>4°</td>
                             <td>${tdPersonagem4}</td>
                             <td>${qtdPersonagens4}</td>
+                        </tr>
+                        `
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>5°</td>
+                            <td>${tdPersonagem5}</td>
+                            <td>${qtdPersonagens5}</td>
+                        </tr>
+                        `
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>6°</td>
+                            <td>${tdPersonagem6}</td>
+                            <td>${qtdPersonagens6}</td>
+                        </tr>
+                        `
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>7°</td>
+                            <td>${tdPersonagem7}</td>
+                            <td>${qtdPersonagens7}</td>
+                        </tr>
+                        `
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>8°</td>
+                            <td>${tdPersonagem8}</td>
+                            <td>${qtdPersonagens8}</td>
+                        </tr>
+                        `
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>9°</td>
+                            <td>${tdPersonagem9}</td>
+                            <td>${qtdPersonagens9}</td>
                         </tr>
                         `
                         
