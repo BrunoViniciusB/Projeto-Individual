@@ -43,7 +43,7 @@ body{
 
 .indice{
     display: flex;
-    width: 500px;
+    width: 600px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

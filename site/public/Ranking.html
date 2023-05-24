@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="css/Ranking.css">
+    <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body onload="atualizarRanking()">
+
+    <header class="nav">
+        <div class="container">
+        <div class="logo">
+            <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
+        </div>
+            <div class="indice">
+                <ul><a href="index.html">Home</a></ul>
+                <ul><a href="personagensFavoritos.html">Ranking</a></ul>
+                <ul><a href="dashboard.html">Transformações</a></ul>
+                
+                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
+                <button id="botao_personagens">
+                    Personagens
+                    <div id="id_personagens" class="div_personagens">
+                        <a href="telaDosPersonagens/goku.html">Goku</a>
+                        <a href="telaDosPersonagens/vegeta.html">Vegeta</a>    
+                        <a href="telaDosPersonagens/gohan.html">Gohan</a>
+                        <a href="telaDosPersonagens/piccolo.html">Piccolo</a>
+
+                    </div>
+                </button>
+                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
+                </div>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- body -->
+    <div id="conteudo" class="conteudo">
+        <h1>Ranking personagens favoritos</h1>
+        <table id="ranking">
+            <tr>
+                <th>Colocação</th>
+                <th>Personagens</th>
+                <th>Quantidade de votos</th>
+            </tr> 
+            
+        </table>
+
+
+        </div>
+    <!-- body -->
+
+
+    <footer class="contato">
+        <div class="container">
+            <div class="foot">
+                <h4>Feito por Bruno Vinicius - SPTech &copy; 2023<span class="version">v1.0.0</span></h4>
+            </div>
+       
+    </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    var navIsShowing = false;
+    function mostrarPersonagens() {
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
+        }
+    }
+
+    function atualizarRanking() {
+        //aguardar();
+        fetch("usuarios/listaRanking").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    
+                    throw "Nenhum resultado encontrado!!";''
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                    for (let i = 0; i < 1; i++) {
+                        var publicacao = resposta[i];
+
+                        // criando e manipulando elementos do HTML via JavaScript
+
+                        var tdPosicao = i+1
+                        var tdPersonagem1 = resposta[0].nome
+                        var tdPersonagem2 = resposta[1].nome
+                        var tdPersonagem3 = resposta[2].nome
+                        var tdPersonagem4 = resposta[3].nome
+
+                        var qtdPersonagens1 = resposta[0].qtdPersonagens
+                        var qtdPersonagens2 = resposta[1].qtdPersonagens
+                        var qtdPersonagens3 = resposta[2].qtdPersonagens
+                        var qtdPersonagens4 = resposta[3].qtdPersonagens
+
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>1°</td>
+                            <td>${tdPersonagem1}</td>
+                            <td>${qtdPersonagens1}</td>
+                        </tr>
+                        `
+    
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>2°</td>
+                            <td>${tdPersonagem2}</td>
+                            <td>${qtdPersonagens2}</td>
+                        </tr>
+                        `
+    
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>3°</td>
+                            <td>${tdPersonagem3}</td>
+                            <td>${qtdPersonagens3}</td>
+                        </tr>
+                        `
+    
+                        ranking.innerHTML += `
+                        <tr>
+                            <td>4°</td>
+                            <td>${tdPersonagem4}</td>
+                            <td>${qtdPersonagens4}</td>
+                        </tr>
+                        `
+                        
+                    }
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+    }
+
+</script>

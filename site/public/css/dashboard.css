@@ -3,6 +3,107 @@ body{
     padding: 0;
 }
 
+*
+{ 
+    font-family: "Poppins";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.imagemDeFundo{
+    background-image: url('https://i.pinimg.com/originals/78/55/9b/78559b16f10875bb831b9052aa51bed3.jpg');
+    background-size: cover;
+}
+
+.nav{
+    background-color: rgb(255, 153, 37);
+    border-bottom: 5px solid black;
+}
+
+.indice ul{
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: none;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.indice{
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indice ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.estilizacao_botao {
+    display: flex; 
+}
+
+.estilizacao_botao img {
+    margin-top: 10px; 
+}
+
+#botao_personagens {
+    display: block;
+    background-color: rgb(255, 153, 37);
+    border: none;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.div_personagens{
+    background-color: white;
+    display: none;
+    width: 145px;
+    height: 100px;
+    position: absolute;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 3px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.div_personagens a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+}
+
+.sair img{
+    margin-top: 7.5px;
+}
+
 .myChart{
     margin: 0;
 }
@@ -55,4 +156,23 @@ select{
     border-radius: 7px;
     border: 1px solid black;
     padding: 5px;
+}
+
+
+.contato{
+    background-color: black;
+}
+
+.footTamanho{
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 190vh;
+    display: flex;
+    justify-content: space-around;
 }
