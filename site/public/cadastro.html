@@ -13,8 +13,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="./js/funcoes.js"></script>
     <script src="header.js"></script>
@@ -66,7 +64,7 @@
 </div>
 
     <div class="login">
-        <div class="alerta_erro">
+        <div class="alerta_erro" id="alerta_erro">
             <div class="card_erro" id="cardErro">
                 <div class="mensagem_erro" id="mensagem_erro"></div>
         </div>
@@ -127,6 +125,8 @@
             return false;
         }
         else {
+            alerta_erro.style.backgroundColor = "green";
+            mensagem_erro.style.backgroundColor = "green";
             setInterval(sumirMensagem, 5000)
         }
 
@@ -151,7 +151,8 @@
             if (resposta.ok) {
                 cardErro.style.display = "block";
 
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+                
+                mensagem_erro.innerHTML = `Cadastro realizado com sucesso! Redirecionando para tela de Login...`;
 
                 setTimeout(() => {
                     window.location = "login.html";

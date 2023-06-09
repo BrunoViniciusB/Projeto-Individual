@@ -6,23 +6,10 @@ function carregarHeader() {
             <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
         </div>
             <div class="indice">
-                <ul><a href="Index.html">Home</a></ul>
-                <ul><a href="login.html">Login</a></ul>
+                <ul><a href="index.html">Home</a></ul>
+                <ul><a href="historia.html">História</a></ul>
                 <ul><a href="cadastro.html">Cadastro</a></ul>
-                
-                <div onclick="mostrarPersonagens()" class="estilizacao_botao">
-                <button id="botao_personagens">
-                    Personagens
-                    <div id="id_personagens" class="div_personagens">
-                        <a href="goku.html">Goku</a>
-                        <a href="vegeta.html">Vegeta</a>    
-                        <a href="gohan.html">Gohan</a>
-                        <a href="piccolo.html">Piccolo</a>
-    
-                    </div>
-                </button>
-                <img src="https://static.thenounproject.com/png/1123247-200.png" height="15px">
-                </div>
+                <ul><a href="login.html">Login</a></ul>
     
             </div>
         </div>`
@@ -52,9 +39,9 @@ function carregarHeader() {
                 </div>
 
 
-                <a href='index.html' onclick = 'sessionStorage.clear()' class="sair" >
-                    <img src="assets/imgs/sair.png" height="20px">
-                </a>
+                <ul><a href='index.html' onclick = 'sessionStorage.clear()' class="sair" >
+                    Sair
+                </a></ul>
 
             </div>
         </div>`
