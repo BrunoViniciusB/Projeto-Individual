@@ -104,6 +104,15 @@ body{
     margin-top: 7.5px;
 }
 
+.conteudo{
+    height: auto;
+}
+
+.transformacoes{
+    margin: auto;
+    width: 90%;
+}
+
 .myChart{
     margin: 0;
 }
