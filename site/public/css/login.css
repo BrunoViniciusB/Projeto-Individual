@@ -4,7 +4,7 @@
 }
 
 .indice{
-    width: 500px;
+    width: 450px;
 }
 
 .imagemDeFundo .container{
@@ -46,6 +46,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    height: auto;
 }
 
 .cadastro input{

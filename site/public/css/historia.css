@@ -8,11 +8,6 @@ body{
     padding: 0;
 }
 
-.imagemDeFundo{
-    background-image: url('https://i.pinimg.com/originals/78/55/9b/78559b16f10875bb831b9052aa51bed3.jpg');
-    background-size: cover;
-}
-
 .nav{
     background-color: rgb(255, 153, 37);
     border-bottom: 5px solid black;
@@ -28,12 +23,6 @@ body{
     flex-direction: row;
     margin:auto;
     justify-content: space-between;
-}
-
-.imagemDeFundo .container{
-    background-color: rgba(14, 14, 14, 0.6);
-    margin: 0;
-    width: auto;
 }
 
 .logo{
@@ -82,54 +71,15 @@ body{
     background-color: white;
 }
 
-
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    color: white;
-    font-size: 45px;
-
-}
-
-.conteudoInterno{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.imagemDoContainer{
-    display: flex;
-    width: 350px;
-    height: 350px;
-    background-image: url('../assets/imgs/goku-fazendo-L-removebg-preview.png');
-    background-size: cover;
-    flex-direction: column;
-}
-
 .conteudo{
-    height: 650px;
+    width: 92%;
+    margin: auto;
 }
 
-.conteudo p{
-    display: flex;
-    width: 65%;
-    margin-left: 20px;
-    color: white;
-    font-size: 20px;
-
-}
-
-.cadastroNoP{
-    text-decoration: none;
-    font-size: 18px;
-    border: solid rgb(0, 0, 0) 1px;
-    border-radius: 10px;
-    padding: 7px;
-    background-color: rgba(255, 153, 37, 0.904);
-    color: white;
-    margin-left: 43px;
+.conteudo h1{
+    margin: 0;
+    padding-block-start: 0.67em;
+    padding-block-end: 0.67em;
 }
 
 .div_personagens{
@@ -157,38 +107,120 @@ body{
     border-bottom: 1px solid black;
 }
 
-.sobreMim{
-    background-color: rgb(154, 92, 179);
+
+
+h1{
+    text-align: center;
 }
 
-.sobreMim .container {
-    margin: 0px;
-    width: auto;
+h2{
+    text-align: center;
 }
 
-.sobreMim .container{
-    background-color: rgba(14, 14, 14, 0.6);
+.tituloInicio{
+    width: 57%;
 }
 
-.conteudoSobreMim h1{
+.textoInicio{
     display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 45px;
+    justify-content: space-between;
 }
 
-.conteudoSobreMim p{
-    display: flex;
-    margin: 20px;
-    color: white;
-    font-size: 20px;
+.TEXTO1{
+    width: 56%;
 }
 
-.foto{
+.sagaSaiyajins{
     display: flex;
-    justify-content: center;
-    height: 300px;
+    flex-direction: column;
+    align-items: end;
 }
+
+.tituloSaiyajins{
+    width: 57%;
+}
+
+.textoSaiyajins{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.TEXTO2{
+    width: 55%;
+}
+
+.tituloFreeza{
+    width: 57%;
+}
+
+.textoFreeza{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TEXTO3{
+    width: 59%;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: column;
+}
+
+.sagaCell{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.tituloCell{
+    width: 59%;
+}
+
+.textoCell{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.TEXTO4 {
+    width: 59%;
+}
+
+.tituloMajinBoo{
+    width: 57%;
+}
+
+.textoMajinBoo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TEXTO5{
+    width: 60%;
+}
+
+.inicio{
+    margin-bottom: 50px;
+}
+
+.sagaSaiyajins{
+    margin-bottom: 50px;
+}
+
+.sagaFreeza{
+    margin-bottom: 50px;
+}
+
+.sagaCell{
+    margin-bottom: 50px;
+}
+
+.sagaMajinBoo{
+    margin-bottom: 100px;
+}
+
 
 .contato{
     background-color: black;
@@ -202,4 +234,3 @@ body{
     display: flex;
     justify-content: space-around;
 }
-

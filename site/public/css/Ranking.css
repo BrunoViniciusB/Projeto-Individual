@@ -9,8 +9,12 @@ body{
 }
 
 .imagemDeFundo{
-    background-image: url('https://i.pinimg.com/originals/78/55/9b/78559b16f10875bb831b9052aa51bed3.jpg');
+    background-image: url('../assets/imgs/background-céu-azul-dbz-tela-cadastro.png');
     background-size: cover;
+}
+
+.fundoEscuro{
+    background-color: rgba(14, 14, 14, 0.6);
 }
 
 .nav{
@@ -115,11 +119,17 @@ th, td{
     text-align: center;
 }
 
-.cabecalho{
-    background-color: rgb(221, 152, 72);
+tr, td{
+    background-color: white;
 }
 
+.cabecalho{
+    background-color: rgb(245, 150, 61);
+}
 
+h1{
+    color: white;
+}
 
 
 .contato{

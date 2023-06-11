@@ -17,11 +17,12 @@ function carregarHeader() {
         document.getElementById('header').innerHTML = 
         `<div class="container">
         <div class="logo">
-            <img src="https://logosmarcas.net/wp-content/uploads/2021/02/Dragon-Ball-Logo.png" height="85px">
+            <img src="assets/imgs/Dragon-Ball-Logo.png" height="85px">
         </div>
-            <div class="indice" style = "width: 650px;">
-                <ul><a href="index.html">Home</a></ul>
-                <ul><a href="Ranking.html">Ranking</a></ul>
+            <div class="indice" style = "width: 820px;">
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="historia.html">História</a></ul>
+            <ul><a href="Ranking.html">Ranking</a></ul>
                 <ul><a href="dashboard.html">Transformações</a></ul>
                 
                 <div onclick="mostrarPersonagens()" class="estilizacao_botao">
