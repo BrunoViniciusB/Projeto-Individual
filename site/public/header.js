@@ -23,7 +23,7 @@ function carregarHeader() {
             <ul><a href="index.html">Home</a></ul>
             <ul><a href="historia.html">História</a></ul>
             <ul><a href="Ranking.html">Ranking</a></ul>
-                <ul><a href="dashboard.html">Transformações</a></ul>
+            <ul><a href="dashboard.html">Transformações</a></ul>
                 
                 <div onclick="mostrarPersonagens()" class="estilizacao_botao">
                 <button id="botao_personagens">

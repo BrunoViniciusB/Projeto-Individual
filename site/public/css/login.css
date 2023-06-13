@@ -1,5 +1,5 @@
 .imagemDeFundo{
-    background-image: url('../assets/imgs/background-céu-azul-dbz-tamanho-certo.png');
+    background-image: url('../assets/imgs/background-céu-azul-dbz-tela-cadastro.png');
     background-size: cover;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .imagemDeFundo .container{
-    height: 480px;
+    height: 587px;
 }
 
 .cadastro{

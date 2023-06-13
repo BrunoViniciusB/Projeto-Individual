@@ -103,7 +103,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 80px;
-    font-size: 60px;
+    font-size: 32px;
     margin-top: 0.40em;
     margin-bottom: 0.40em;
 }
@@ -113,11 +113,16 @@ body{
     width: 90%;
 }
 
-p{
-    font-size: 20px;
+.sobre{
+    font-size: 16px;
+    width: 950px;
+    margin-bottom: 5%;
 }
 
-
+.conteudoInterno{
+    display: flex;
+    justify-content: space-between;
+}
 
 .contato{
     background-color: black;

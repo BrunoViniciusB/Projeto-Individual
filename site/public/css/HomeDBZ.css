@@ -89,7 +89,7 @@ body{
     align-items: center;
     height: 80px;
     color: white;
-    font-size: 45px;
+    font-size: 40px;
 
 }
 
@@ -102,14 +102,18 @@ body{
 .imagemDoContainer{
     display: flex;
     width: 350px;
-    height: 350px;
-    background-image: url('../assets/imgs/goku-fazendo-L-removebg-preview.png');
+    height: 480px;
+    background-image: url('https://imagensemoldes.com.br/wp-content/uploads/2020/05/Goku-Concentrado-PNG.png');
     background-size: cover;
     flex-direction: column;
 }
 
 .conteudo{
-    height: 650px;
+    height: auto;
+}
+
+.textoEbotao{
+    width: 1005px;
 }
 
 .conteudo p{
@@ -121,7 +125,7 @@ body{
 
 }
 
-.cadastroNoP{
+.cadastroAbaixo{
     text-decoration: none;
     font-size: 18px;
     border: solid rgb(0, 0, 0) 1px;

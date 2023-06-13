@@ -154,10 +154,14 @@ h4{
     margin: 0;
 }
 
+
 .titulo{
     display: flex;
     justify-content: center;
     color: black;
+    margin: 12px;
+    margin-bottom: 16px;
+    font-size: 36px;
 }
 
 select{

@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>História</title>
-    <script src="header.js"></script>
     <link rel="stylesheet" href="css/historia.css" />
     <link rel="shortcut icon" href="assets/imgs/Z-dragonball-removebg-preview.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-    </style>
+      </style>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
     />
+    <script src="header.js"></script>
   </head>
   <body onload="carregarHeader()">
     <div class="nav" id="header"></div>
@@ -144,3 +144,17 @@
     </footer>
   </body>
 </html>
+
+
+<script>
+  var navIsShowing = false;
+    function mostrarPersonagens() {
+        if(navIsShowing) {
+            navIsShowing = false;
+            id_personagens.style.display = "none"
+        }else{
+            navIsShowing = true;
+            id_personagens.style.display = "flex"
+        }
+    }
+</script>
